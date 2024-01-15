@@ -1,0 +1,73 @@
+.background{
+    background-image: url(img/ilustrasion-scene.png);
+    height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        margin-top: 10%;
+
+}
+div img{
+    /* background-color: black; */
+}
+.div-1{
+    margin-top: 270px;
+    position: absolute;
+    animation: motor;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    animation-timing-function: linear;
+
+}
+.div-2{
+    margin-top: 270px;
+    position: absolute;
+    animation-name: car;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    vertical-align: middle;
+    animation-timing-function: linear;
+}
+.div-3{
+    margin-top: 270px;
+    position: absolute;
+    animation-name: bike;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    vertical-align: middle;
+    animation-timing-function: linear;
+}
+@keyframes motor{
+    0%{
+        left:0px ;
+    }
+    100%{
+        left: 3000px;
+    }
+}
+@keyframes car{
+    0%{
+        left: -3000px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes bike{
+0%{
+    right: -3000px;
+}
+100%{
+    right: 0px;
+}
+}
+.hero{
+    background-color: black;
+    height: 50vh;
+    width: auto;
+    margin-top: -30px;
+}
